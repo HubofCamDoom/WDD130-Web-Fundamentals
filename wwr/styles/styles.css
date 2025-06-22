@@ -132,6 +132,28 @@ footer .social img {
     padding-bottom: 15px;
 }
 
+.page-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+}
+.page-img {
+    border: 10px solid #FFBA00;
+    width: 100%;
+}
+.river-one {
+    grid-row: 1;
+    align-content: center;
+}
+.river-two {
+    grid-row: 2;
+    align-content: center;
+}
+.river-three {
+    grid-row: 3;
+    align-content: center;
+}
+
 .home-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
