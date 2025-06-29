@@ -17,9 +17,15 @@ nav a {
 }
 nav a:hover {
     background-color: gray;
-    color: black;
+    color: white;
     border: 1px solid black;
     border-radius: 10px;
+}
+nav a.active {
+  background-color: Gray;
+  color: white;
+  border: 1px solid black;
+  border-radius: 10px;
 }
 .logo {
     width: 80px;
