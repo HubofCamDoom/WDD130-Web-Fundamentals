@@ -5,38 +5,41 @@
 }
 
 /* NAVIGATION BAR */
-nav {
-    display: flex;
-    justify-content: space-around;
+.top-bar {
+    display: inline-block;
+    width: 100%;
+}
+.right-nav {
+    float: right;
 }
 nav a {
+    float: left;
     text-align: center;
     color: black;
     text-decoration: none;
-    padding: 35px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
 }
 nav a:hover {
     background-color: gray;
     color: white;
-    border: 1px solid black;
-    border-radius: 10px;
+    border: 2px solid black;
 }
 nav a.active {
   background-color: Gray;
   color: white;
-  border: 1px solid black;
-  border-radius: 10px;
+  border: 2px solid black;
 }
 .logo {
     width: 80px;
-    padding-top: 5px;
+    margin: 10px;
+    border-radius: 50%;
+    border: 2px black solid;
 }
 #logo_link {
-    padding-top: 5px;
-    justify-self: center;
-    align-self: center;
+    float: left;
 }
-
 /* BODY */
 body {
     background-color: #FFFFFF;
@@ -44,8 +47,7 @@ body {
     font-size: 22px;
     margin: 0;
     padding: 0;
-    /* Center the content on the page */
-    text-align: center;
+    width: auto;
 }
 /* MAIN */
 .main-content {
@@ -58,6 +60,7 @@ body {
     background-color: white;
     margin: 20px;
     border-radius: 10px;
+    text-align: center;
 }
 .full-section {
     border: 5px solid black;
@@ -66,6 +69,7 @@ body {
     margin: 20px;
     grid-column: 1/3;
     border-radius: 10px;
+    text-align: center;
 }
 .section-img {
     max-width: 100%;
@@ -77,17 +81,20 @@ body {
 /* HEADER */
 header {
     background-color: orange;
-    display: grid;
-    grid-template-columns: 150px auto;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    border-bottom: 5px black solid;
 }
 /* FOOTER */
 footer {
     background-color: orange;
     padding: 25px 50px;
-    margin-top: 200px;
+    margin-top: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border-top: 5px black solid;
 }
 footer a {
     color: black;
